@@ -19,6 +19,7 @@ public:
     }
   }
 
+<<<<<<< HEAD
 
 
 // insertion sort overloaded function
@@ -32,6 +33,8 @@ public:
     }
   }
 =======
+=======
+>>>>>>> becbde1bd66c2ad8240b44088bb8fa5ed530f8bb
 // quick sort overloaded function
   void sort(int left, int right) {
     if (left < right) {
@@ -59,7 +62,10 @@ public:
     }
   }
 
+<<<<<<< HEAD
 >>>>>>> main
+=======
+>>>>>>> becbde1bd66c2ad8240b44088bb8fa5ed530f8bb
   void printSortedArr() {
     for (int i = 0; i < arrElem.size(); i++) {
       cout << arrElem[i] << " ";
