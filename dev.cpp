@@ -19,6 +19,47 @@ public:
     }
   }
 
+
+
+// insertion sort overloaded function
+  void sort() {
+    for (int i = 0; i < arrElem.size() - 1; i++) {
+      int j = i;
+      while (j > 0 && arrElem[j - 1] > arrElem[j]) {
+        swap(arrElem[j - 1], arrElem[j]);
+        j--;
+      }
+    }
+  }
+=======
+// quick sort overloaded function
+  void sort(int left, int right) {
+    if (left < right) {
+      // Selecting the pivot element
+      int pivot = arrElem[(left + right) / 2];
+      // Partitioning the array around the pivot
+      int i = left;
+      int j = right;
+      while (i <= j) {
+        while (arrElem[i] < pivot)
+          i++;
+        while (arrElem[j] > pivot)
+          j--;
+        if (i <= j) {
+          swap(arrElem[i], arrElem[j]);
+          i++;
+          j--;
+        }
+      }
+
+ 
+
+      sort(left, j);
+      sort(i, right);
+    }
+  }
+
+>>>>>>> main
   void printSortedArr() {
     for (int i = 0; i < arrElem.size(); i++) {
       cout << arrElem[i] << " ";
