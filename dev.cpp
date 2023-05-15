@@ -9,7 +9,7 @@ private:
 public:
   sortingAlgo(vector<int> a) { arrElem = a; }
 
-  // bubble sort overloaded function
+  // bubble sort overloaded 
   void sort(char c) {
     for (int i = arrElem.size() - 1; i >= 1; i--) {
       for (int j = 0; j < i; j++) {
