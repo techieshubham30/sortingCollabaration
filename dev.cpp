@@ -2,6 +2,7 @@
 using namespace std;
 
 class sortingAlgo {
+  
 private:
   vector<int> arrElem;
 
