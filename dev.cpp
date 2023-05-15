@@ -19,9 +19,6 @@ public:
     }
   }
 
-<<<<<<< HEAD
-
-
 // insertion sort overloaded function
   void sort() {
     for (int i = 0; i < arrElem.size() - 1; i++) {
@@ -32,9 +29,21 @@ public:
       }
     }
   }
-=======
-=======
->>>>>>> becbde1bd66c2ad8240b44088bb8fa5ed530f8bb
+
+ // selection sort overloaded function
+  void sort(bool b) {
+    int minIndex;
+    for (int i = 0; i < arrElem.size() - 1; i++) {
+      minIndex = i;
+      for (int j = i; j < arrElem.size(); j++) {
+        if (arrElem[j] < arrElem[minIndex]) {
+          minIndex = j;
+        }
+      }
+      swap(arrElem[i], arrElem[minIndex]);
+    }
+  }
+
 // quick sort overloaded function
   void sort(int left, int right) {
     if (left < right) {
@@ -62,10 +71,6 @@ public:
     }
   }
 
-<<<<<<< HEAD
->>>>>>> main
-=======
->>>>>>> becbde1bd66c2ad8240b44088bb8fa5ed530f8bb
   void printSortedArr() {
     for (int i = 0; i < arrElem.size(); i++) {
       cout << arrElem[i] << " ";
