@@ -19,6 +19,17 @@ public:
     }
   }
 
+
+// insertion sort overloaded function
+  void sort() {
+    for (int i = 0; i < arrElem.size() - 1; i++) {
+      int j = i;
+      while (j > 0 && arrElem[j - 1] > arrElem[j]) {
+        swap(arrElem[j - 1], arrElem[j]);
+        j--;
+      }
+    }
+  }
   void printSortedArr() {
     for (int i = 0; i < arrElem.size(); i++) {
       cout << arrElem[i] << " ";
